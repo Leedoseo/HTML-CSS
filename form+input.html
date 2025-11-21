@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form태그는 사용자의 입력을 받아서 데이터를 웹 서버 등으로 전송할 때 사용하는 태그 -->
+
+    <!-- 사용법 -->
+    <form>
+      <!-- 자주 사용하는 대표적인 input 위젯 -->
+      <!-- text, number, tel, radio, password, button, email, checkbox, file 등 -->
+      <input type="text" placeholder="이름" />
+      <input type="email" placeholder="이메일" />
+      <input type="password" placeholder="패스워드" />
+      <input type="submit" value="회원 가입" />
+      <!-- button태그는 스타일링 가능 -->
+      <button>회원가입</button>
+
+      <!-- 라디오 버튼과 레이블 사용법-->
+      <label for="man">남자</label>
+      <input id="man" type="radio" name="gender" />
+      <label for="woman">여자</label>
+      <input id="woman" type="radio" name="gender" />
+
+      <!-- 체크박스 버튼과 레이블 사용법-->
+       <label for="korean">한국인</label>
+       <input type="checkbox" name="한국인" id="korean">
+       <label for="american">미국인</label>
+       <input type="checkbox" name="미국인" id="american">
+       <label for="japanese">일본인</label>
+       <input type="checkbox" name="일본인" id="japanese">
+    </form>
+  </body>
+  <body>
+    <!-- label 태그는 사용자 이넡페이스 항목에 라벨, 이름을 붙여주는 역할 + 연결 -->
+    <label for="name">이름</label>
+    <input tpye="text" id="name" placeholder="이름" />
+  </body>
+  <body>
+    <!-- form을 서버로 전송하는 방법 -->
+     <!-- HTTP 방식중에 GET 방식과 POST방식을 지정가능 -->
+      <!-- HTTP: 클라이언트와 서버간 통신 방법에 대한 규칙 -->
+     <!-- GET방식 : 서버로부터 정보를 조회하기 위한 메서드 -->
+      <!-- POST방식 : 리소스를 생성하거나 변경하기 위한 메서드 -->
+       <!-- 생략할경우는 GET 방식으로 기본지정 -->
+     <form action="abc.com" method=""></form>
+  </body>
+</html>
+
