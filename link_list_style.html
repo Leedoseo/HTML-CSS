@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--  a태그를 사용해 표현하는 링크에 지정할 수 있는 대표적인 스타일 -->
+    <!-- color, background-color, text, font속성들, 여백, display 속성들 -->
+    <style>
+      a {
+        color: white;
+        background-color: black;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      /* 링크의 상태에 따라 각각 다른 스타일 지정 가능
+         링크의 상태 다섯 가지 
+        link: 기본 상태,
+         hover: 마우스 오버 상태,
+         active: 마우스 클릭 상태,
+         visited: 방문했던 링크,
+         focus: 포커스를 가진 상태
+       */
+      a:hover {
+        background-color: darkred;
+      }
+    </style>
+    <!-- CSS에서 리스트에 적용할 수 있는 대표적인 속성 -->
+    <!-- list-style-type, list-style-image, list-style-position 등 -->
+    <style>
+      ul {
+        list-style-type: disc;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">Hello</a></li>
+      <li><a href="#">World</a></li>
+    </ul>
+  </body>
+</html>
