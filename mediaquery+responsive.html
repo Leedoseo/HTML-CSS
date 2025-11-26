@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* 기본 스타일 (모바일 우선) */
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1열 */
+    gap: 20px;
+}
+
+.card {
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+/* 태블릿 이상 (768px~) */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr; /* 2열 */
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+}
+
+/* PC (1200px~) */
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4열 */
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+}
+</style>
+</head>
+<body>
+    <h1>우리 서비스</h1>
+    
+    <div class="container">
+        <div class="card">서비스 1</div>
+        <div class="card">서비스 2</div>
+        <div class="card">서비스 3</div>
+        <div class="card">서비스 4</div>
+    </div>
+</body>
+</html>
