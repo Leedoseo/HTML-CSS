@@ -1,0 +1,88 @@
+/* 네비게이션 부분 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: #0066cc;
+}
+
+/* 카드 레이아웃 부분 */
+/* 카드 컨테이너 */
+.card-container {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+}
+
+/* 개별 카드 */
+.card {
+  width: 400px;
+  background: beige;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px 20px 5px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.card p {
+    padding: 0 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.card button {
+    margin: 15px 20px 20px 20px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #0052a3;
+    
+}
