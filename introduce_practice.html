@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>이도서의 간단한 자기소개 페이지 만들기</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이도서 - 프론트 엔트 개발자</title>
+    <link rel="stylesheet" href="introduce_style.css" />
   </head>
   <body>
-    <h2>안녕하세요 이도서입니다.</h2>
+    <div class="container">
+      <!-- 프로필 섹션 -->
+      <div class="profile-section">
+        <img src="./src/profile.jpeg" alt="프로필 사진" class="profile-img">
+        <h1>이도서 (Lee doseo)</h1>
+        <p class="intro">React 개발자를 꿈꾸는 프론트엔드 개발 지망생</p>
+      </div>
 
-    <h3>자기소개</h3>
-    <p>저는 React 개발자를 꿈꾸는 개발 취준생입니다.</p>
+      <!-- 연락처 섹션-->
+      <div class="section">
+        <h2>연락처</h2>
+        <ul>
+          <li>Email: kmgwhn@gmail.com</li>
+          <li>Github: https://github.com/Leedoseo</li>
+          <li>Phone: 010-0000-0000</li>
+        </ul>
+      </div>
 
-    <h3>보유 기술</h3>
-    <ul>
-      <li>Swift</li>
-      <li>Flutter</li>
-      <li>HTML 학습중</li>
-      <li>JavaScript 학습중</li>
-      <li>React 학습중</li>
-    </ul>
+      <!-- 기술 스택 섹션 -->
+      <div class="section">
+        <h2>기술 스택</h2>
+        <ul>
+          <li>Swift</li>
+          <li>Flutter</li>
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
 
-    <h3>연락처</h3>
-    <p>Email : <a href="kmgwhn@gmail.com">kmgwhn@gmail.com</a></p>
-
-    <!-- 이미지는 구현 x -->
-    <h3>프로필 사진</h3>
-    <img src="profile.jpg" alt="내 사진" width="200" height="300" />
-
-    <h3>노션 링크</h3>
-    <a
-      href="https://longhaired-quince-5b6.notion.site/13e9fd9f157980918fdbedf58c07c199?source=copy_link"
-      target="_blank"
-      >내 노션 링크</a
-    >
+      <!-- 목표 섹션 -->
+      <div class="section">
+        <h2>목표</h2>
+        <p>
+          2026년 2월까지 React 포트폴리오 완성 후 프론트엔드 개발자로 취업하기!
+        </p>
+      </div>
+    </div>
   </body>
 </html>
